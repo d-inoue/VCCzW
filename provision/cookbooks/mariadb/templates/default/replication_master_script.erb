@@ -1,0 +1,17 @@
+# The steps below need to be performed in conjunction with the addition of a new
+# slave server. It involves a temporary lock of the tables.
+
+# Once the slave is ready to begin performing replication, run the following:
+
+mysql -u root -p'<%= node['mariadb']['server_root_password'] %>'
+FLUSH TABLES WITH READ LOCK;
+SHOW MASTER STATUS;
+
+# In another terminal, perform a mysqldump
+
+mysqldump -u root -p'<%= node['mariadb']['server_root_password'] %>' --all-databases > dump.sql
+
+# Move this file over to the new slave and import it. Once imported, run the 
+# following in the SQL terminal:
+
+UNLOCK TABLES;

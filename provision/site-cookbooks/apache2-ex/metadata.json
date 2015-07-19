@@ -1,0 +1,31 @@
+{
+  "name": "apache2-ex",
+  "description": "Installs/Configures apache2-ex",
+  "long_description": "Installs/Configures apache2-ex",
+  "maintainer": "dinoue",
+  "maintainer_email": "contact@dinoue.net",
+  "license": "All rights reserved",
+  "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0",
+  "source_url": "",
+  "issues_url": ""
+}

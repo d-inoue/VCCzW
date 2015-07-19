@@ -1,0 +1,46 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: centos-5.10
+- name: centos-6.5
+- name: centos-7.0
+- name: ubuntu-10.04
+- name: ubuntu-12.04
+- name: ubuntu-14.04
+#- name: debian-6.0.10
+- name: debian-7.6
+
+suites:
+- name: clients-5.5
+  run_list:
+    - recipe[mariadb::client]
+  attributes:
+    mariadb:
+      version: 5.5
+- name: servers-5.5
+  run_list:
+    - recipe[mariadb::server]
+  attributes:
+    mariadb:
+      version: 5.5
+      server_debian_password: 'ilovestrongpasswords'
+      server_root_password:   'ilovestrongpasswords'
+      server_repl_password:   'ilovestrongpasswords'
+- name: clients-10.0
+  run_list:
+    - recipe[mariadb::client]
+  attributes:
+    mariadb:
+      version: 10.0
+- name: servers-10.0
+  run_list:
+    - recipe[mariadb::server]
+  attributes:
+    mariadb:
+      version: 10.0
+      server_debian_password: 'ilovestrongpasswords'
+      server_root_password:   'ilovestrongpasswords'
+      server_repl_password:   'ilovestrongpasswords'
