@@ -1,6 +1,6 @@
 Vagrant.configure(2) do |config|
 
-  config.vm.box = 'VCCzW_2.0.2'
+  config.vm.box = 'dinoue/vcczw'
 
   config.vm.network :private_network, ip: '192.168.33.12'
   config.hostsupdater.aliases = ['www.vcczw.dev','phpmyadmin.vcczw.dev']
