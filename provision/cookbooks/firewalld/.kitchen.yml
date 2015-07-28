@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7.0
+
+suites:
+  - name: default
+    run_list:
+      - "recipe[fixture::port]"
+      - "recipe[fixture::service]"
+    attributes:
+
+  - name: rich_rule
+    run_list:
+      - "recipe[fixture::rich_rule]"
+    attributes:
