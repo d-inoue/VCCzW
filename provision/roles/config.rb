@@ -7,7 +7,7 @@ run_list(
    'recipe[mariadb::client]',
    'recipe[mariadb::server]',
    'recipe[php]',
-   'recipe[wordpress]',
+   #'recipe[wordpress]',
    'recipe[base]',
 )
 default_attributes(
