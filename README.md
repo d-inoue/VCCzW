@@ -2,9 +2,18 @@
  Vagrant+CentOS7+Chef-zero+Wordpress
 
 #Memo
+ init
+ Vagrant
+ Virtual Box
+
+ require
+ vagrant-hostsupdater
+ vagrant-omnibus
+ vagrant-chef-zero
+
  CentOS7
  Git 2.4
- firewalld enable start, add http
+ firewalld enable start, add/service zone=public http https
 
  Apache2
  mariaDB 5.5
@@ -13,10 +22,10 @@
  phpMyAdmin
 
  Node.js
- grunt, grunt-cli, grunt-init,gulp
+ grunt, grunt-cli, grunt-init, gulp
 
- Ruby
- Bundler
- Sass
+ Ruby 2.2.2
+ bundler sass rbenv-rehash wordmove
 
- Wordpress - under construction
+ Wordpress
+ wp-cli

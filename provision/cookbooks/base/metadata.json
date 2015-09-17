@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "apache2": "~> 3.1.0",
-    "ssl_certificate": "~> 1.5.0",
-    "firewalld": "~> 1.1.1"
+    "ssl_certificate": "~> 1.5.0"
   },
   "recommendations": {
   },
@@ -28,7 +27,7 @@
   },
   "recipes": {
   },
-  "version": "2.0.2",
+  "version": "2.1.1",
   "source_url": "",
   "issues_url": ""
 }
