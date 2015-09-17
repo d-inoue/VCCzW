@@ -1,0 +1,49 @@
+vm_box: VCCzW_3.0.0
+
+private_ip: 192.168.33.12
+public_ip: 0
+#public_ip: 192.168.24.88
+host_name: vcczw.local
+domain_name:
+ - www.vcczw.local
+ - phpmyadmin.vcczw.local
+
+memory: 512
+cpus: 1
+
+sync_folder: 'www/wordpress'
+document_root: '/var/www/wordpress'
+phpmyadmin_folder: '/usr/share/phpMyAdmin/'
+
+apache:
+ port:
+  - 80
+  - 443
+
+mariadb:
+ database: vcczw
+ username: vagrant
+ password: vcczw
+
+user: vagrant
+group: vagrant
+
+rubies:
+ - 2.2.2
+ruby_global: 2.2.2
+
+wpcli:
+ locale: ja
+ version: latest
+ prefix: wp_
+ title: 'VCCZW'
+ admin_user: vagrant
+ admin_password: vcczw
+ admin_email: vcczw@example.com
+ plugins:
+  - contact-form-7
+  - wp-total-hacks
+  - dynamic-hostname
+  - all-in-one-seo-pack
+ rewrite: '%postname%'
+ blogdescription: Hello VCCZW!
