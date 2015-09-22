@@ -31,3 +31,4 @@ default['vcczw']['wpcli']['admin_email'] = 'vcczw@example.com'
 default['vcczw']['wpcli']['plugins'] = %w[contact-form-7 wp-total-hacks dynamic-hostname]
 default['vcczw']['wpcli']['rewrite'] = '%postname%'
 default['vcczw']['wpcli']['blogdescription'] = 'Hello VCCZW!'
+default['vcczw']['wpcli']['theme'] = 'https://github.com/d-inoue/GB-w/archive/master.zip'

@@ -32,6 +32,9 @@ rubies:
  - 2.2.2
 ruby_global: 2.2.2
 
+nodejs:
+ version: 0.12.6
+
 wpcli:
  locale: ja
  version: latest
@@ -47,3 +50,4 @@ wpcli:
   - all-in-one-seo-pack
  rewrite: '%postname%'
  blogdescription: Hello VCCZW!
+ theme: 'https://github.com/d-inoue/GB-w/archive/master.zip'

@@ -29,3 +29,13 @@
 
  Wordpress
  wp-cli
+
+
+#Useage
+ 1, install Vagrant, Virtual Box
+ 2, install vagrant-hostsupdater, vagrant-omnibus, vagrant-chef-zero
+ 3, clone this
+ 4, vagrant up at project folder
+ 5, npm install at theme folder
+ 6, bower install at theme folder
+ 7, then gulp before you start to work

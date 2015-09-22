@@ -57,6 +57,8 @@ default_attributes(
     }
   },
   'nodejs' => {
+    #'install_method' => 'source',
+    'version' => _conf['nodejs']['version'],
     'npm_packages' => [
       {'name'     =>      'grunt'},
       {'name'     =>      'grunt-cli'},
@@ -91,7 +93,8 @@ default_attributes(
       'admin_email'     => _conf['wpcli']['admin_email'],
       'plugins'         => _conf['wpcli']['plugins'],
       'rewrite'         => _conf['wpcli']['rewrite'],
-      'blogdescription' => _conf['wpcli']['blogdescription']
+      'blogdescription' => _conf['wpcli']['blogdescription'],
+      'theme'           => _conf['wpcli']['theme']
     }
   }
 )
